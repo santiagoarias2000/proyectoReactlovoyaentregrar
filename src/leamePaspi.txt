@@ -1,0 +1,79 @@
+#Crear proyect
+#init a new proyect
+npm i -g npm@8.15.1 ---> install or update to npm version
+npm i -g typescript ---> install or update to ultime version to typescript
+tsc --version ---> see to version to TS
+npm i -g react ---> use to react when don`t have connection internet
+npm view react version ---> view version react to console
+npm i create-react-app ---> !!more importan from use to thes class!!
+ ---> create proyect
+
+#ahora la trama del icono
+
+#ahora instale las librerias basicas
+npm i bootstrap
+npm i @fortawesome/fontawesome-free
+npm i react-router-dom
+npm i react-bootstrap
+#AHora incluya las librerias en el proyecto asi
+
+#Iniciar aplicacion:
+npm start
+#Cambiar el porto de 3000 a 8088 carpeta package.json
+"start": "set PORT=8088 && react-scripts start",
+
+#Colocar estas lineas de codigo en index.tsx
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import "@fortawesome/fontawesome-free/css/all.css";
+
+#para subir las aplicacion a la web
+npm run-script build
+entrar a esta pagina: netlify
+
+###################################333
+#creacion de bakend en consola
+npm start ----> iniciar backend
+
+#instalacion de librerias
+npm i cors
+npm i morgan
+npm i express
+npm i mongoose
+npm i bcryptjs
+npm i jsonwebtoken
+
+#instalacion de librerias que no son necesarias
+npm i dotenv --save-dev 
+npm i nodemon --save-dev
+npm i @types/cors  --save-dev   
+npm i @types/morgan --save-dev
+npm i @types/express --save-dev
+npm i @types/jsonwebtoken --save-dev
+
+#iniciar Type Script toca desde consola
+tsc --init
+
+powerShell para quitar el error de consola por tsc 
+get-executionpolicy
+set-executionpolicy unrestricted
+
+#Scripts para ejecutar el codigo backend--- esto va en package.json
+        "build": "tsc -w",
+        "dev": "nodemon build/index.js"
+
+#organizar carpetas
+src
+	config
+	controller
+	dao
+	entity
+	middleware
+	routes
+	schemes
+
+#corre el programa 
+-en una terminal llamada build
+npm run build
+-en una terminal llamada dev
+npm run dev
